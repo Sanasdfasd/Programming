@@ -36,9 +36,9 @@ for(i=0;i<n;i++)
     if(br==0)
     	dp[mat[i][0]]=max(dp[mat[i][0]], dp[mat[j][0]]+1);
   }
-
 }
 int res=0;
+
 for(i=0;i<n;i++)
   res=max(res,dp[i]);
 

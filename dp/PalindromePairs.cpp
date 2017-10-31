@@ -18,30 +18,30 @@ int main() {
             if (i == j)
                 pali[i][j] = true;
             else {
-                if((i+1)<=(j-1))
-                pali[i][j] = (pali[i + 1][j - 1] && (str[i] == str[j]));
+                if ((i + 1) <= (j - 1))
+                    pali[i][j] = (pali[i + 1][j - 1] && (str[i] == str[j]));
                 else
-                    pali[i][j]= (str[i] == str[j]);
+                    pali[i][j] = (str[i] == str[j]);
             }
         }
     }
     long long int sum[str.size()];
-   long long  int dp[str.size()];
+    long long int dp[str.size()];
     for (i = 0; i < str.size(); i++) {
         sum[i] = 0;
         dp[i] = 0;
     }
-    sum[0]=1;
-    for (i = 1; i<str.size(); i++) {
-        sum[i]+=sum[i-1];
-        dp[i]+=dp[i-1];
-        for (j = i;j>0; j--) {
-            sum[i]+= (long long int) (pali[j][i]);
-            dp[i] +=(sum[j - 1] *pali[j][i]);
+    sum[0] = 1;
+    for (i = 1; i < str.size(); i++) {
+        sum[i] += sum[i - 1];
+        dp[i] += dp[i - 1];
+        for (j = i; j > 0; j--) {
+            sum[i] += (long long int) (pali[j][i]);
+            dp[i] += (sum[j - 1] * pali[j][i]);
         }
-        sum[i]+=(long long int) (pali[j][i]);
+        sum[i] += (long long int) (pali[j][i]);
     }
-    cout<<dp[str.size()-1]<<endl;
+    cout << dp[str.size() - 1] << endl;
     return 0;
 }
 

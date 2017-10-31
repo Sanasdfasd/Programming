@@ -12,6 +12,7 @@ int main() {
     int l[n + 5];
     int d[n + 5];
     int i, j;
+
     for (i = 0; i < n; i++)
         cin >> l[i];
     for (j = 0; j < n; j++)

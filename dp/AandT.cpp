@@ -17,6 +17,7 @@ int main() {
     for (j = 0; j < n; j++)
         cin >> d[i];
 
+
     return 0;
 }
 

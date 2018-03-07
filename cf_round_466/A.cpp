@@ -7,6 +7,7 @@ int main(){
   cout << "happy" << endl;
   cout << "fhsdkal" << endl;
   cout << "not real" << endl;
-
+  cout << "true" << endl;
+  cout << "bullhit" << endl;
   return 0;
 }

@@ -3,7 +3,7 @@
 //
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main() {
   cout << "happy" << endl;
   cout << "fhsdkal" << endl;
   cout << "not real" << endl;
@@ -11,5 +11,7 @@ int main(){
   cout << "bullhit" << endl;
   cout << "jdfla" << endl;
   cout << " jfsal" << endl;
+  cout << "it is " << endl;
+
   return 0;
 }

@@ -6,12 +6,13 @@
 using namespace std;
 
 map<int, int> cnt;
+int a,b;
 
 int compute(int v1,int v2){
     if(v1<=cnt[v2])
         return 0;
     else
-        return (v1 - cnt[v2]);
+      return (v1 - cnt[v2]);
 
 }
 int main(){

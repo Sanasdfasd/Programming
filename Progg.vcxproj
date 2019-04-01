@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F07DA8D7-5460-462E-A254-CC445FBBD0DC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ad_hoc\A.cpp" />
+    <ClCompile Include="ad_hoc\ab.cpp" />
+    <ClCompile Include="ad_hoc\Consecutive_sum.cpp" />
+    <ClCompile Include="ad_hoc\Dirt.cpp" />
+    <ClCompile Include="ad_hoc\Exam.cpp" />
+    <ClCompile Include="ad_hoc\LinkedList.cpp" />
+    <ClCompile Include="ad_hoc\Priority_queue.cpp" />
+    <ClCompile Include="ad_hoc\Programming.cpp" />
+    <ClCompile Include="ad_hoc\QuickSort.cpp" />
+    <ClCompile Include="ad_hoc\Remove_leet.cpp" />
+    <ClCompile Include="ad_hoc\Reverse.cpp" />
+    <ClCompile Include="ad_hoc\Running_k_median.cpp" />
+    <ClCompile Include="ad_hoc\sorted_linked_list.cpp" />
+    <ClCompile Include="ad_hoc\Td.cpp" />
+    <ClCompile Include="ad_hoc\Test.cpp" />
+    <ClCompile Include="ad_hoc\Test1.cpp" />
+    <ClCompile Include="ad_hoc\Time_Pq.cpp" />
+    <ClCompile Include="ad_hoc\Time_Pq_1.cpp" />
+    <ClCompile Include="ad_hoc\training1.cpp" />
+    <ClCompile Include="ad_hoc\trie.cpp" />
+    <ClCompile Include="ad_hoc\Wild_card.cpp" />
+    <ClCompile Include="akuna capital\A.cpp" />
+    <ClCompile Include="akuna capital\B.cpp" />
+    <ClCompile Include="akuna capital\C.cpp" />
+    <ClCompile Include="assignment1_sandeepavula_sxa165930_saisandeepvaddi_sxv160830\part 2\ID3_implementation.cpp" />
+    <ClCompile Include="binary_indexed_trees\Fenwick-_trees.cpp" />
+    <ClCompile Include="binary_indexed_trees\USACO_gold_level_2011_1.cpp" />
+    <ClCompile Include="binary_search\cf_ed_2_B.cpp" />
+    <ClCompile Include="binary_search\cf_good_bye_16_C.cpp" />
+    <ClCompile Include="binary_search\cf_good_bye_16_C_tourist.cpp" />
+    <ClCompile Include="binary_search\cf_round_112_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_112_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_113_A.cpp" />
+    <ClCompile Include="binary_search\cf_round_121_A.cpp" />
+    <ClCompile Include="binary_search\cf_round_153_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_168_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_171_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_171_B_two_pointers.cpp" />
+    <ClCompile Include="binary_search\cf_round_202_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_218_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_219_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_256_D.cpp" />
+    <ClCompile Include="binary_search\cf_round_271_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_280_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_300_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_321_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_334_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_350_D1.cpp" />
+    <ClCompile Include="binary_search\cf_round_350_D2.cpp" />
+    <ClCompile Include="binary_search\cf_round_354_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_362_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_364_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_367_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_371_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_384_B.cpp" />
+    <ClCompile Include="binary_search\cf_round_401_C.cpp" />
+    <ClCompile Include="binary_search\cf_round_77.cpp" />
+    <ClCompile Include="binary_search\cf_round_Pi_C.cpp" />
+    <ClCompile Include="binary_search\good_bye_2016_A.cpp" />
+    <ClCompile Include="binary_search\test.cpp" />
+    <ClCompile Include="cf_1.cpp" />
+    <ClCompile Include="cf_div_405_1.cpp" />
+    <ClCompile Include="cf_div_405_2.cpp" />
+    <ClCompile Include="cf_div_405_3.cpp" />
+    <ClCompile Include="cf_div_405_4.cpp" />
+    <ClCompile Include="cf_dp_magic_numbers.cpp" />
+    <ClCompile Include="cf_dp_New_Skateboard(advanced).cpp" />
+    <ClCompile Include="cf_dp_New_Skateboard.cpp" />
+    <ClCompile Include="cf_Igor_Intresting_numbers.cpp" />
+    <ClCompile Include="cf_round_206\A.cpp" />
+    <ClCompile Include="cf_round_206\B.cpp" />
+    <ClCompile Include="cf_round_206\C.cpp" />
+    <ClCompile Include="cf_round_275\A.cpp" />
+    <ClCompile Include="cf_round_275\B.cpp" />
+    <ClCompile Include="cf_round_275\C.cpp" />
+    <ClCompile Include="cf_round_329\A.cpp" />
+    <ClCompile Include="cf_round_329\B.cpp" />
+    <ClCompile Include="cf_round_329\C.cpp" />
+    <ClCompile Include="cf_round_337\A.cpp" />
+    <ClCompile Include="cf_round_337\B.cpp" />
+    <ClCompile Include="cf_round_337\C.cpp" />
+    <ClCompile Include="cf_round_372\A.cpp" />
+    <ClCompile Include="cf_round_372\B.cpp" />
+    <ClCompile Include="cf_round_372\c.cpp" />
+    <ClCompile Include="cf_round_397\A.cpp" />
+    <ClCompile Include="cf_round_397\B.cpp" />
+    <ClCompile Include="cf_round_397\C.cpp" />
+    <ClCompile Include="cf_round_407\A.cpp" />
+    <ClCompile Include="cf_round_407\B.cpp" />
+    <ClCompile Include="cf_round_408\A.cpp" />
+    <ClCompile Include="cf_round_408\B.cpp" />
+    <ClCompile Include="cf_round_408\C.cpp" />
+    <ClCompile Include="cf_round_408\dummy.cpp" />
+    <ClCompile Include="cf_round_412\A.cpp" />
+    <ClCompile Include="cf_round_412\B.cpp" />
+    <ClCompile Include="cf_round_412\C.cpp" />
+    <ClCompile Include="cf_round_413\A.cpp" />
+    <ClCompile Include="cf_round_413\B.cpp" />
+    <ClCompile Include="cf_round_413\C.cpp" />
+    <ClCompile Include="cf_round_415\A.cpp" />
+    <ClCompile Include="cf_round_415\B.cpp" />
+    <ClCompile Include="cf_round_415\C.cpp" />
+    <ClCompile Include="cf_round_416\A.cpp" />
+    <ClCompile Include="cf_round_416\B.cpp" />
+    <ClCompile Include="cf_round_416\C.cpp" />
+    <ClCompile Include="cf_round_417\A.cpp" />
+    <ClCompile Include="cf_round_417\B.cpp" />
+    <ClCompile Include="cf_round_417\C.cpp" />
+    <ClCompile Include="cf_round_417\cf_round_368_B.cpp" />
+    <ClCompile Include="cf_round_418\A.cpp" />
+    <ClCompile Include="cf_round_418\B.cpp" />
+    <ClCompile Include="cf_round_418\C.cpp" />
+    <ClCompile Include="cf_round_418\cf_round_368_B.cpp" />
+    <ClCompile Include="cf_round_419_A.cpp" />
+    <ClCompile Include="cf_round_419_B.cpp" />
+    <ClCompile Include="cf_round_420\A.cpp" />
+    <ClCompile Include="cf_round_420\B.cpp" />
+    <ClCompile Include="cf_round_420\C.cpp" />
+    <ClCompile Include="cf_round_421\A.cpp" />
+    <ClCompile Include="cf_round_421\B.cpp" />
+    <ClCompile Include="cf_round_421\C.cpp" />
+    <ClCompile Include="cf_round_466\A.cpp" />
+    <ClCompile Include="cf_round_466\B.cpp" />
+    <ClCompile Include="cf_round_466\C.cpp" />
+    <ClCompile Include="cf_round_467\A.cpp" />
+    <ClCompile Include="cf_round_467\B.cpp" />
+    <ClCompile Include="cf_round_467\C.cpp" />
+    <ClCompile Include="cf_round_467\D.cpp" />
+    <ClCompile Include="cf_round_468\A.cpp" />
+    <ClCompile Include="cf_round_468\B.cpp" />
+    <ClCompile Include="cf_round_468\C.cpp" />
+    <ClCompile Include="cf_round_468\D.cpp" />
+    <ClCompile Include="cf_round_470\A.cpp" />
+    <ClCompile Include="cf_round_470\B.cpp" />
+    <ClCompile Include="cf_round_470\C.cpp" />
+    <ClCompile Include="cf_round_470\D.cpp" />
+    <ClCompile Include="cf_round_470\E.cpp" />
+    <ClCompile Include="cf_round_472\A.cpp" />
+    <ClCompile Include="cf_round_472\B.cpp" />
+    <ClCompile Include="cf_round_472\C.cpp" />
+    <ClCompile Include="cf_round_474\A.cpp" />
+    <ClCompile Include="cf_round_474\B.cpp" />
+    <ClCompile Include="cf_round_474\C.cpp" />
+    <ClCompile Include="cf_round_474\D.cpp" />
+    <ClCompile Include="cf_round_512\A.cpp" />
+    <ClCompile Include="cf_round_512\B.cpp" />
+    <ClCompile Include="cf_round_512\C.cpp" />
+    <ClCompile Include="cf_round_512\D.cpp" />
+    <ClCompile Include="cf_round_548\1.cpp" />
+    <ClCompile Include="cf_round_548\B.cpp" />
+    <ClCompile Include="cf_round_548\C.cpp" />
+    <ClCompile Include="cf_round_548\D.cpp" />
+    <ClCompile Include="cf_round_548\E.cpp" />
+    <ClCompile Include="cf_round_82.cpp" />
+    <ClCompile Include="cf_round_82\A.cpp" />
+    <ClCompile Include="cf_round_82\B.cpp" />
+    <ClCompile Include="cf_round_82\C.cpp" />
+    <ClCompile Include="cf_round_82\D.cpp" />
+    <ClCompile Include="cf_round_82\E.cpp" />
+    <ClCompile Include="cf_round_84\A.cpp" />
+    <ClCompile Include="cf_round_84\B.cpp" />
+    <ClCompile Include="cf_round_84\C.cpp" />
+    <ClCompile Include="cf_round_84\C1.cpp" />
+    <ClCompile Include="cf_round_84\D.cpp" />
+    <ClCompile Include="cf_round_84\E.cpp" />
+    <ClCompile Include="challengge.cpp" />
+    <ClCompile Include="Circles.cpp" />
+    <ClCompile Include="code_forces_new.cpp" />
+    <ClCompile Include="Coin_change(HR_hard).cpp" />
+    <ClCompile Include="Cummulative_binary_search.cpp" />
+    <ClCompile Include="dp\8VC_A.cpp" />
+    <ClCompile Include="dp\AT.cpp" />
+    <ClCompile Include="dp\cf_round_120_2_E.cpp" />
+    <ClCompile Include="dp\cf_round_121_1_A.cpp" />
+    <ClCompile Include="dp\cf_round_135_C.cpp" />
+    <ClCompile Include="dp\cf_round_135_C1.cpp" />
+    <ClCompile Include="dp\cf_round_145_2_C.cpp" />
+    <ClCompile Include="dp\cf_round_214_2_C.cpp" />
+    <ClCompile Include="dp\cf_round_264_2_D.cpp" />
+    <ClCompile Include="dp\cf_round_274_E.cpp" />
+    <ClCompile Include="dp\cf_round_278_2_D.cpp" />
+    <ClCompile Include="dp\cf_round_286_2_C.cpp" />
+    <ClCompile Include="dp\cf_round_302_A.cpp" />
+    <ClCompile Include="dp\cf_round_336_B.cpp" />
+    <ClCompile Include="dp\cf_round_343_2_D.cpp" />
+    <ClCompile Include="dp\cf_round_368_B.cpp" />
+    <ClCompile Include="dp\cf_round_369_C.cpp" />
+    <ClCompile Include="dp\cf_round_374_2_C.cpp" />
+    <ClCompile Include="dp\cf_round_386_2_C.cpp" />
+    <ClCompile Include="dp\cf_round_406_1_A.cpp" />
+    <ClCompile Include="dp\cf_round_458_1_C.cpp" />
+    <ClCompile Include="dp\cf_round_459_1_B.cpp" />
+    <ClCompile Include="dp\cf_round_459_B.cpp" />
+    <ClCompile Include="dp\cf_round_517.cpp" />
+    <ClCompile Include="dp\cf_round_edu_11_dp.cpp" />
+    <ClCompile Include="dp\Cf_round_ed_30_B.cpp" />
+    <ClCompile Include="dp\cf_round_ed_39_D.cpp" />
+    <ClCompile Include="dp\MemSql_C.cpp" />
+    <ClCompile Include="dp\PalindromePairs.cpp" />
+    <ClCompile Include="dp\Source1.cpp" />
+    <ClCompile Include="elements of programming\primitivetypes\A.cpp" />
+    <ClCompile Include="elements of programming\primitivetypes\B.cpp" />
+    <ClCompile Include="gcd_array.cpp" />
+    <ClCompile Include="google kickstart\kicstart round b\A.cpp" />
+    <ClCompile Include="google kickstart\kicstart round b\B.cpp" />
+    <ClCompile Include="google-code-jam-2018\A.cpp" />
+    <ClCompile Include="google-code-jam-2018\B.cpp" />
+    <ClCompile Include="google-code-jam-2018\C.cpp" />
+    <ClCompile Include="hacker_rank_pr.cpp" />
+    <ClCompile Include="hr_dp_count_your_progression.cpp" />
+    <ClCompile Include="hr_dp_eight_lucky_numbers.cpp" />
+    <ClCompile Include="hr_dp_min_max_digit.cpp" />
+    <ClCompile Include="hr_dp_min_max_digit_advanced.cpp" />
+    <ClCompile Include="hr_dp_number_of_coprime_arrays.cpp" />
+    <ClCompile Include="hr_dp_problem.cpp" />
+    <ClCompile Include="hr_dp_shark_and wet_subquences.cpp" />
+    <ClCompile Include="hr_file.cPP" />
+    <ClCompile Include="Hr_hard.cpp" />
+    <ClCompile Include="hr_lcs_return.cpp" />
+    <ClCompile Include="hr_new.cpp" />
+    <ClCompile Include="hr_simpllified_chess_engine.cpp" />
+    <ClCompile Include="hr_w27_zero_nim.cpp" />
+    <ClCompile Include="ID3_implementation.cpp" />
+    <ClCompile Include="K_marsh.cpp" />
+    <ClCompile Include="liveramp\A.cpp" />
+    <ClCompile Include="liveramp\B.cpp" />
+    <ClCompile Include="manthan\A.cpp" />
+    <ClCompile Include="manthan\B.cpp" />
+    <ClCompile Include="manthan\C.cpp" />
+    <ClCompile Include="manthan\D.cpp" />
+    <ClCompile Include="max_sum.cpp" />
+    <ClCompile Include="ML_assignment1 - Copy (2).cpp" />
+    <ClCompile Include="ML_assignment1 - Copy (3).cpp" />
+    <ClCompile Include="ML_assignment1 - Copy.cpp" />
+    <ClCompile Include="ML_assignment1.cpp" />
+    <ClCompile Include="mutation_genome.cpp" />
+    <ClCompile Include="new.cpp" />
+    <ClCompile Include="new_bs.cpp" />
+    <ClCompile Include="servicetitan\1.cpp" />
+    <ClCompile Include="servicetitan\2.cpp" />
+    <ClCompile Include="servicetitan\3.cpp" />
+    <ClCompile Include="servicetitan\4.cpp" />
+    <ClCompile Include="Square_sequnces(HR_hard).cpp" />
+    <ClCompile Include="training.cpp" />
+    <ClCompile Include="twitter\A.cpp" />
+    <ClCompile Include="twitter\B.cpp" />
+    <ClCompile Include="Untitled1.cpp" />
+    <ClCompile Include="Untitled12.cpp" />
+    <ClCompile Include="uva\Uva_10264.cpp" />
+    <ClCompile Include="uva\Uva_11173.cpp" />
+    <ClCompile Include="uva\Uva_11760.cpp" />
+    <ClCompile Include="uva\Uva_594.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

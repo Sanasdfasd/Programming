@@ -8,7 +8,6 @@ int  find_value( long long int val)
   int i, res=1;
   for(i=0;i<n;i++)
   {
-   
     if((vs[i].second)==1 && val <1900)
        	return (1900-val);
      if(vs[i].second ==2 && (val >1899))

@@ -1,0 +1,43 @@
+# Created by .ignore support plugin (hsz.mobi)
+### C++ template
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.ap
+single_file_exe.exe
+.idea/
+CMakeLists.txt
+cmake-build-debug/
+dp/output.txt
+.gitignore
+
+!/dp/cf_round_ed_39_D.cpp
+!/Elements of Programming/PrimitiveTypes/A.cpp

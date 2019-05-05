@@ -29,6 +29,7 @@ int main(){
           dp[j+s]=max( dp[j+s], dp[j]+e-(j*l));
        }
       }
+      
     }
     
   int ans=0;

@@ -19,6 +19,7 @@ int main(){
    }
    sort(inp.begin(), inp.end(),compare);
    int dp[10005]={};
+   // Works for us
    
    for(int i=0;i<n;i++){
      int s=inp[i].first.first;
@@ -28,14 +29,15 @@ int main(){
        if((j+s) <=10000 && (dp[j]!=0 ||(j==0))){
           dp[j+s]=max( dp[j+s], dp[j]+e-(j*l));
        }
+      }
     }
-   }
   int ans=0;
   for(int i=0;i<=10000;i++){
+    
      ans=max( ans, dp[i]);
   }
    cout << "Case #" << it << ": "<<ans<<"\n";
   }
-
+ 
 	return 0;
 }

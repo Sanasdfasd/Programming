@@ -19,8 +19,7 @@ int main(){
    }
    sort(inp.begin(), inp.end(),compare);
    int dp[10005]={};
-   // Works for us
-   
+
    for(int i=0;i<n;i++){
      int s=inp[i].first.first;
      int e=inp[i].first.second;
@@ -31,6 +30,7 @@ int main(){
        }
       }
     }
+    
   int ans=0;
   for(int i=0;i<=10000;i++){
      ans=max( ans, dp[i]);

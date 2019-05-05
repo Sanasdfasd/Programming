@@ -30,6 +30,7 @@ string solve(int n, int k, string prevdigs, int len) /// prevdigs are all digits
   if (k >= high_bar) /// k is after 39 (largest in 3XX)
   {
     k -= high_bar;
+    //Working okay for us
     int curdig = sigdig + k / allones_1 + 1; /// figure out the current digit among 4~9;
     return solve(allones_2 * 9, k % allones_1, prevdigs * 10 + curdig, len - 2); ///allones_2 * 9 makes 9, meaning search everything
   }                                                                                ///with length len-2

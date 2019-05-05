@@ -34,6 +34,7 @@ int main(){
   int ans=0;
   for(int i=0;i<=10000;i++){
      ans=max( ans, dp[i]);
+     
   }
    cout << "Case #" << it << ": "<<ans<<"\n";
   }

@@ -9,6 +9,7 @@ int main(){
     set<int> ms;
     int n,t;
     cin>>n;
+    cout<<" the value of n is "<<n<<endl;
     for (int i = 0; i <n ; ++i) {
         cin>>t;
         if(t!=0)
